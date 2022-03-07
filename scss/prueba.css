@@ -1,0 +1,183 @@
+body {
+  background-image: url(../bosque_background.jpg);
+  background-size: cover;
+}
+
+header {
+  text-align: right;
+  background-color: #4c504c;
+  background-image: url(../madera_background_2.jpg);
+  background-size: cover;
+  border: 2px solid black;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.mainhover:hover {
+  font-size: small;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 30px;
+}
+
+ul li {
+  display: inline;
+  font-weight: 900;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  background-image: url(../madera_background.jpg);
+  border: double black;
+  font-size: xx-large;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+h1 p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+main {
+  background-image: url(../madera_background.jpg);
+  text-align: left;
+  border: 2px solid black;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+#imageMain {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+footer {
+  color: black;
+  background-image: url(../madera_background_2.jpg);
+  background-size: cover;
+  font-size: small;
+  margin-top: 50px;
+  border-top: 0px;
+  border: black 2px solid;
+  color: #f79393;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 5px;
+}
+
+.italic {
+  color: red;
+  font-style: italic;
+  text-decoration: none;
+}
+
+form {
+  display: -ms-grid;
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+}
+
+.imagenesGaleria {
+  padding: 10px;
+  gap: 5px;
+}
+
+.mainR {
+  padding: 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 150%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: inline;
+          flex-direction: inline;
+  text-align: center;
+  gap: 2%;
+  margin: 0;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nosotrosP {
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: -ms-grid;
+    display: grid;
+    grid-row: auto;
+  }
+  iframe {
+    display: none;
+  }
+}
+
+@media (max-width: 1986px) {
+  .mainR {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footerP {
+  color: #f79393;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 30px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 30%;
+  position: relative;
+  height: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  float: right;
+}
+
+.contactMain {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+}
+/*# sourceMappingURL=prueba.css.map */
