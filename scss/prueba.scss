@@ -1,20 +1,24 @@
 body{
     background-image: url(../bosque_background.jpg);
+    background-size: cover;
 }
 
-$colorGradiente: rgb(170, 77, 34);
+$colorGradiente: rgb(138, 63, 29);
 
 header {
     text-align: right;
     background-color: rgb(76, 80, 76);
-    background-image: linear-gradient(to bottom, white, $colorGradiente);
+    background-image: url(../madera_background_2.jpg);
+    background-size: cover;
     border: 2px solid black;
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 .mainhover:hover{
-    font-size: large;
+    font-size: small;
 }
 
 ul{
@@ -58,15 +62,23 @@ main{
     padding: 10px;
 }
 
+#imageMain{
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 
 footer{
     color: black;
-    text-align: center;
-    background-image: linear-gradient(to top, white, $colorGradiente);
-    font-size: large;
+    background-image: url(../madera_background_2.jpg);
+    background-size: cover;
+    font-size: small;
     margin-top: 50px;
     border-top: 0px;
     border: black 2px solid;
+    color: rgb(247, 147, 147);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
 }
 
 
@@ -75,25 +87,6 @@ footer{
     font-style: italic;
     text-decoration: none;
 } 
-
-/*
-@media (min-width:  320px){
-    h1 {font-size: 20px;}
-    a {font-size: 20px;}
-    main {font-size: 20px;}
-}
-
-@media (max-width:651px ) {
-    .hero {display: grid; grid-column: auto; max-width: max-content;}
-}
-
-@media screen and (min-width: 768px){
-    h1 {font-size: 25px;}
-    a {font-size: 25px;}
-    main {font-size: 25px;}
-    .imagenesGaleria {display: flex; justify-content: center;}
-}
-*/
 
 form{
     display:grid;
@@ -108,12 +101,62 @@ form{
 
 .mainR{
     padding: 10px;
+    color: white;
+    display: flex;
+    font-size:150%;
+    flex-wrap: wrap;
+    flex-direction: inline;
+    text-align: center;
+    gap: 2%;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .nosotrosP{
     padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
-@media (min-width: 992px) {
-    main{ display: grid; grid-row: auto;}    
+@media (max-width: 768px) {
+    main{ display: grid; grid-row: auto;}   
+    iframe{ display:none}
+}
+
+@media (max-width: 1986px) {
+    .mainR{flex-direction: column;}
+}
+
+.footerP{
+    color: rgb(247, 147, 147);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px;
+
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-bottom:10%;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    float: right;
+}
+
+.contactMain{
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
 }
